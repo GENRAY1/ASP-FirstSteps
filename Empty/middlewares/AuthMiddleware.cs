@@ -1,6 +1,5 @@
 ﻿namespace Empty.middlewares
 {
-    //позже
     public class AuthMiddleware
     {
         private readonly RequestDelegate next;
@@ -16,7 +15,7 @@
             var clientToken = context.Request.Query["token"];
             if (String.IsNullOrEmpty(clientToken))
             {
-                await context.Response.WriteAsync("Отсутсвует параметр: токен авторизации");
+                await context.Response.WriteAsync($"Отсутсвует параметр: токен авторизации (?token={acceptToken})");
                 return;
             }
 

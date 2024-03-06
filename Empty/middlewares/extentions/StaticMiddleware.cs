@@ -1,4 +1,4 @@
-﻿namespace Empty.middlewares
+﻿namespace Empty.middlewares.extentions
 {
     public static class StaticMiddleware
     {
